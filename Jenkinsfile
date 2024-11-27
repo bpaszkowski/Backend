@@ -1,3 +1,7 @@
+        def imageName="thatgreendragon/panda-backend"
+        def dockerRegistry=""
+        def registryCredentials= "dockerhub"
+
 pipeline {
     agent {
   label 'agent'
@@ -6,9 +10,9 @@ pipeline {
     environment {
         PIP_BREAK_SYSTEM_PACKAGES=1
         scannerHome = tool 'SonarQube';
-        def imageName="thatgreendragon/panda-backend"
-        def dockerRegistry=""
-        def registryCredentials= "dockerhub"
+//        def imageName="thatgreendragon/panda-backend"
+ //       def dockerRegistry=""
+  //      def registryCredentials= "dockerhub"
         }
 
     stages {
