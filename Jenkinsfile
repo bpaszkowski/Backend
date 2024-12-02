@@ -75,7 +75,7 @@ pipeline {
             }
         }
     }
-       }
+       
        
     post {
         always {
@@ -86,3 +86,4 @@ pipeline {
     //        build job: 'app_of_apps', parameters: [ string(name: 'backendDockerTag', value: "$dockerTag")], wait: false
      //   }
     }
+}
